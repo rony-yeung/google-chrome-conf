@@ -1,0 +1,165 @@
+// http://src.chromium.org/viewvc/chrome/trunk/src/chrome/installer/util/master_preferences.h
+// https://support.google.com/chrome/a/answer/188453?hl=en
+// http://superuser.com/questions/773614/where-can-i-find-a-full-list-of-chromes-master-preferences
+{
+    "browser": {
+        "check_default_browser": false,
+        "default_browser_setting_enabled": true,
+        "disk_cache_dir": "/tmp/chrome-cache",
+        "last_known_google_url": "https://www.google.com",
+        "last_prompted_google_url": "https://www.google.com",
+        "pepper_flash_settings_enabled": true,
+        "show_home_button": false,
+        "show_update_promotion_info_bar": false
+    },
+    "default_apps": "noinstall",
+    "distribution": {
+        "alternate_shortcut_text": false,
+        "create_all_shortcuts": false,
+        "do_not_create_desktop_shortcut": true,
+        "do_not_create_quick_launch_shortcut": true,
+        "do_not_create_taskbar_shortcut" : true,
+        "do_not_launch_chrome": true,
+        "do_not_register_for_update_launch": true,
+        "import_bookmarks": false,
+        "import_bookmarks_from_file": "bookmarks.html",
+        "import_history": false,
+        "import_home_page": false,
+        "import_saved_passwords": false,
+        "import_search_engine": false,
+        "make_chrome_default": false,
+        "make_chrome_default_for_user": false,
+        "msi": true,
+        "oem_bubble": false,
+        "require_eula": false,
+        "show_welcome_page": false,
+        "skip_first_run_ui": true,
+        "suppress_first_run_bubble": true,
+        "suppress_first_run_default_browser_prompt": true,
+        "sync_promo.show_on_first_run_allowed": false,
+        "system_level": true,
+        "verbose_loggine": true
+    },
+    "dns_prefetching": {
+       "enabled": false
+    },
+    "download": {
+        "default_directory": "/tmp/",
+        "directory_upgrade": true,
+        "prompt_for_download": true
+    },
+    "first_run_tabs" : [
+        "chrome://newtab"
+    ],
+    "homepage": "about:blank",
+    "homepage_is_newtabpage": false,
+    "intl": {
+        "accept_languages": "en-US,en",
+        "charset_default": "UTF-8"
+    },
+    "profile": {
+        "block_third_party_cookies": true,
+        "content_settings": {
+            "exceptions": {
+                "plugins": {
+                    "[*.]youtube.com,*": {
+                        "setting": 1
+                    }
+                }
+            }
+        },
+        "default_content_setting_values": {
+            "plugins": 2
+        },
+        "default_content_settings": {
+            "cookies": 2,
+            "geolocation": 2,
+            "media_stream_camera": 2,
+            "media_stream_mic": 2,
+            "mouselock": 2,
+            "plugins": 2,
+            "ppapi_broker": 2
+        },
+	"password_manager_enabled": false
+    },
+    "savefile": {
+        "default_directory": "/tmp/"
+    },
+    "search": {
+        "suggest_enabled": false
+    },
+    "selectfile": {
+        "last_directory": "/tmp"
+    },
+    "sync": {
+        "suppress_start": true
+    },
+    "sync_promo": {
+        "show_on_first_run_allowed": false,
+        "user_skipped": true
+    },
+    "translate_blocked_languages": [
+        "en"
+    ],
+    "webkit": {
+        "webprefs": {
+            "minimum_font_size": 10,
+            "minimum_logical_font_size": 10
+        }
+    }
+}
+
+//    "extensions": {
+//        "settings": {
+//            "cjpalhdlnbpafiamejdnhcphjbkeiagm": {
+//                "location": 1,
+//                "manifest": {
+//                    "content_scripts": [ {
+//                        "all_frames": true,
+//                        "js": [ "js/vapi-client.js", "js/contentscript-start.js" ],
+//                            "matches": [ "http://*/*", "https://*/*" ],
+//                            "run_at": "document_start"
+//                    }, {
+//                          "all_frames": true,
+//                          "js": [ "js/contentscript-end.js" ],
+//                          "matches": [ "http://*/*", "https://*/*" ],
+//                          "run_at": "document_end"
+//                    }, {
+//                          "all_frames": false,
+//                          "js": [ "js/scriptlets/subscriber.js" ],
+//                          "matches": [ "http://*/*", "https://*/*" ],
+//                          "run_at": "document_idle"
+//                    } ],
+//                    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmJNzUNVjS6Q1qe0NRqpmfX/oSJdgauSZNdfeb5RV1Hji21vX0TivpP5gq0fadwmvmVCtUpOaNUopgejiUFm/iKHPs0o3x7hyKk/eX0t2QT3OZGdXkPiYpTEC0f0p86SQaLoA2eHaOG4uCGi7sxLJmAXc6IsxGKVklh7cCoLUgWEMnj8ZNG2Y8UKG3gBdrpES5hk7QyFDMraO79NmSlWRNgoJHX6XRoY66oYThFQad8KL8q3pf3Oe8uBLKywohU0ZrDPViWHIszXoE9HEvPTFAbHZ1umINni4W/YVs+fhqHtzRJcaKJtsTaYy+cholu5mAYeTZqtHf6bcwJ8t9i2afwIDAQAB",
+//                    "name": "uBlock Origin",
+//                    "permissions": [ "contextMenus", "privacy", "storage", "tabs", "unlimitedStorage", "webNavigation", "webRequest", "webRequestBlocking", "http://*/*", "https://*/*" ],
+//                    "update_url": "https://clients2.google.com/service/update2/crx",
+//                    "version": "0.0"
+//                },
+//                "path": "cjpalhdlnbpafiamejdnhcphjbkeiagm\\0.0",
+//                "state": 1
+//            }
+//        }
+//    },
+
+
+//    "webkit": {
+//        "webprefs": {
+//            "fonts": {
+//                "fixed": {
+//                    "Zyyy": "Droid Sans Mono Slashed"
+//                },
+//                "sansserif": {
+//                    "Zyyy": "Droid Sans"
+//                },
+//                "serif": {
+//                    "Zyyy": "Droid Serif"
+//                },
+//                "standard": {
+//                    "Zyyy": "Droid Sans"
+//                }
+//            },
+//            "minimum_font_size": 10,
+//            "minimum_logical_font_size": 10
+//        }
+//    }
